@@ -1,12 +1,14 @@
 package com.spacebitlabs.onelock.list
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
+import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import com.spacebitlabs.onelock.R
-
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+                    .setAction("Action") {
+                        val intent = Intent(Settings.ACTION_REQUEST_SET_AUTOFILL_SERVICE)
+                        intent.data = Uri.parse("package:$packageName")
+                        startActivity(intent)
+                    }.show()
         }
     }
 
