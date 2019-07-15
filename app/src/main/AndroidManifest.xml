@@ -26,8 +26,13 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".pwdetail.PwDetailActivity"
+            android:label="@string/title_activity_pw_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <service
-            android:name=".OneLockFillService"
+            android:name=".autofill.OneLockFillService"
             android:permission="android.permission.BIND_AUTOFILL_SERVICE">
 
             <intent-filter>

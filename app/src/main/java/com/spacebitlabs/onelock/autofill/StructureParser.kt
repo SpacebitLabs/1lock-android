@@ -1,10 +1,6 @@
-package com.spacebitlabs.onelock
+package com.spacebitlabs.onelock.autofill
 
 import android.app.assist.AssistStructure
-import com.spacebitlabs.onelock.autofill.AutofillFieldMetadata
-import com.spacebitlabs.onelock.autofill.AutofillFieldMetadataCollection
-import com.spacebitlabs.onelock.autofill.FilledAutofillField
-import com.spacebitlabs.onelock.autofill.FilledAutofillFieldCollection
 import timber.log.Timber
 
 /**

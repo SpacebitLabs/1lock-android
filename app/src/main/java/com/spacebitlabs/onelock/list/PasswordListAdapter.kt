@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.spacebitlabs.onelock.MockData
 import com.spacebitlabs.onelock.R
+import com.spacebitlabs.onelock.data.Password
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class PasswordListAdapter : RecyclerView.Adapter<PasswordListAdapter.PasswordVH>() {

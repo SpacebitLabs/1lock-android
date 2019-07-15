@@ -1,4 +1,4 @@
-package com.spacebitlabs.onelock
+package com.spacebitlabs.onelock.autofill
 
 import android.os.CancellationSignal
 import android.service.autofill.*

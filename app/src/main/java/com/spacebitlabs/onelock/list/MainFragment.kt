@@ -21,8 +21,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        list.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-
+        list.layoutManager = LinearLayoutManager(context)
         list.adapter = PasswordListAdapter()
     }
 
