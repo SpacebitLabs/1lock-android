@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="auto_fill_service_summary">Assist with filling username and password fields in other apps and on the web.</string>
     <string name="auto_fill_service_description">Whenever OneLock detects a password field on the screen a notification will appear that allows you to quickly access your OneLock vault and automatically fill the correct login information into the fields.</string>
+    <string name="title_activity_pw_detail">Password detail</string>
+    <string name="large_text">Very large text</string>
 </resources>

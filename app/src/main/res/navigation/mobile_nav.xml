@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.spacebitlabs.onelock.list.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_pwDetailFragment"
+            app:destination="@id/pwDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pwDetailFragment"
+        android:name="com.spacebitlabs.onelock.pwdetail.PwDetailFragment"
+        android:label="fragment_pw_detail"
+        tools:layout="@layout/fragment_pw_detail" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+</navigation>

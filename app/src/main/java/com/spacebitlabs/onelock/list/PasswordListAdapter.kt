@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.spacebitlabs.onelock.MockData
 import com.spacebitlabs.onelock.R
 import com.spacebitlabs.onelock.data.Password
+import com.spacebitlabs.onelock.pwdetail.PwDetailFragment
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class PasswordListAdapter : RecyclerView.Adapter<PasswordListAdapter.PasswordVH>() {
@@ -32,6 +33,10 @@ class PasswordListAdapter : RecyclerView.Adapter<PasswordListAdapter.PasswordVH>
         fun bind(password: Password) {
             itemView.name.text = password.name
             itemView.username.text = password.username
+
+            itemView.setOnClickListener {
+                PwDetailFragment.show(itemView)
+            }
         }
     }
 }

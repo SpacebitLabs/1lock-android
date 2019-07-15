@@ -27,9 +27,8 @@
         </activity>
 
         <activity
-            android:name=".pwdetail.PwDetailActivity"
-            android:label="@string/title_activity_pw_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".pwdetail.PwDetailFragment"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service
             android:name=".autofill.OneLockFillService"
