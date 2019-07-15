@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OneLock.iml" filepath="$PROJECT_DIR$/OneLock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/browser/OneLock-browser.iml" filepath="$PROJECT_DIR$/browser/OneLock-browser.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/browser.iml" filepath="$PROJECT_DIR$/browser/browser.iml" />
       <module fileurl="file://$PROJECT_DIR$/onelock-android.iml" filepath="$PROJECT_DIR$/onelock-android.iml" />
