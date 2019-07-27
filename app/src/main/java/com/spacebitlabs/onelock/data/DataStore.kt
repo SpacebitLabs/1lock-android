@@ -1,5 +1,5 @@
 package com.spacebitlabs.onelock.data
 
-class DataStore {
+class DataStore(private val database: OneLockDatabase) {
 
 }

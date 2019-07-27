@@ -5,20 +5,21 @@ buildscript {
             androidx        : '1.0.2',
             androidxArch    : '2.0.0',
             constraintLayout: '1.1.3',
-            kotlin          : '1.3.31',
+            kotlin          : '1.3.41',
             material        : '1.1.0-alpha07',
             navigation      : '2.0.0',
             timber          : '4.7.1',
-            room            : "1.1.1",
+            objectbox       : '2.3.4'
     ]
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0-beta05'
+        classpath 'com.android.tools.build:gradle:3.5.0-rc01'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation"
+        classpath "io.objectbox:objectbox-gradle-plugin:$versions.objectbox"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
