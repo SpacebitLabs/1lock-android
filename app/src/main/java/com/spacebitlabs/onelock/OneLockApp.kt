@@ -10,6 +10,9 @@ class OneLockApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
+        Injection.init(this)
+
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }

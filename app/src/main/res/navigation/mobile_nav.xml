@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.spacebitlabs.onelock.list.MainFragment"
+        android:name="com.spacebitlabs.onelock.list.ListFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

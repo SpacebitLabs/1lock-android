@@ -1,10 +1,9 @@
-package com.spacebitlabs.onelock.list
+package com.spacebitlabs.onelock
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.spacebitlabs.onelock.R
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,5 +1,9 @@
 package com.spacebitlabs.onelock.data
 
-class OneLockDatabase {
+import io.objectbox.BoxStore
+
+class OneLockDatabase(boxStore: BoxStore) {
+
+
 
 }

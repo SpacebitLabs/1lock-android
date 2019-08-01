@@ -3,11 +3,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs'
-apply plugin: 'io.objectbox'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "26.0.3"
     defaultConfig {
         applicationId "com.spacebitlabs.onelock"
         minSdkVersion 26
@@ -23,7 +21,6 @@ android {
         }
     }
 }
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin"
@@ -34,9 +31,10 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
 
     // data libs
-    implementation "io.objectbox:objectbox-android:$versions.objectbox"
     kapt "io.objectbox:objectbox-processor:$versions.objectbox"
     implementation "io.objectbox:objectbox-kotlin:$versions.objectbox"
+    debugImplementation "io.objectbox:objectbox-android-objectbrowser:$versions.objectbox"
+    releaseImplementation "io.objectbox:objectbox-android:$versions.objectbox"
 
     // architecture libs
     implementation "androidx.lifecycle:lifecycle-runtime:$versions.androidxArch"
@@ -47,7 +45,7 @@ dependencies {
 
     // debug libs
     implementation "com.jakewharton.timber:timber:4.7.1"
-    debugImplementation "com.amitshekhar.android:debug-db:1.0.6"
+    // debugImplementation "com.amitshekhar.android:debug-db:1.0.6"
 
     implementation('com.crashlytics.sdk.android:crashlytics:2.10.0@aar') {
         transitive = true
@@ -72,3 +70,4 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:3.2.0"
     androidTestImplementation "androidx.test.ext:truth:1.2.0"
 }
+
