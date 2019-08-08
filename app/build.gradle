@@ -61,6 +61,7 @@ dependencies {
     testImplementation "androidx.test.espresso:espresso-core:3.2.0"
     testImplementation "io.mockk:mockk:1.9.3.kotlin12"
     testImplementation "org.robolectric:robolectric:4.2.1"
+    testImplementation "io.objectbox:objectbox-macos:$versions.objectbox"
 
     androidTestImplementation "androidx.test:core:1.2.0"
     androidTestImplementation "androidx.test:runner:1.2.0"

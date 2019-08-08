@@ -34,7 +34,9 @@ class Injection private constructor(private val appContext: Context) {
 
     fun provideBoxStore(): BoxStore = boxStore
 
-    fun provideOneLockDatabase(): OneLockDatabase = oneLockDatabase
+    fun provideOneLockDatabase(): OneLockDatabase = oneLockDatabase.also {
+        it.loadMockSeedData()
+    }
 
     fun provideDataStore(): DataStore = dataStore
 

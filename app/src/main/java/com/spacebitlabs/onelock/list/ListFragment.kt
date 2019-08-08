@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.spacebitlabs.onelock.R
@@ -36,10 +35,13 @@ class ListFragment : Fragment() {
                 }.show()
         }
 
-        ViewModelProviders.of(this, ViewModelFactory()).get(ListViewModel::class.java)
+        val viewModel = ViewModelFactory.create(this, ListViewModel::class.java)
 
         list.layoutManager = LinearLayoutManager(context)
-        list.adapter = PasswordListAdapter()
+        val adapter = LoginListAdapter()
+        list.adapter = adapter
+
+        adapter.loginList = viewModel.getAllLogins()
     }
 
 }
